@@ -18,12 +18,12 @@ int main(void)
 
     if (result == -1)
     {
-        printf("Unfortunately, we hadn't found you number.\n");
+        printf("Unfortunately, we hadn't found your number.\n");
         double time_taken = ((double)t) / CLOCKS_PER_SEC; // in seconds
         printf("This took %f seconds to execute \n", time_taken);
         return 1;
     }
-    printf("Congratulations! We have found you number on index %d of an array.\n", result);
+    printf("Congratulations! We have found your number on index %d of an array.\n", result);
     double time_taken = ((double)t) / CLOCKS_PER_SEC; // in seconds
     printf("This took %f seconds to execute \n", time_taken);
     return 0;
@@ -48,4 +48,5 @@ int search(int start, int end, int num, int numbers[])
     {
         return search(numbers[current + 1], end, num, numbers);
     }
+
 }
