@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+// Bubble sort takes run time of O(n²) with Ω(n)
+
 int main(void)
 {
     int numbers[] = {6, 2, 9, 0, 4, 7, 1, 5, 3, 8};
@@ -37,4 +39,5 @@ int main(void)
             break;
     }
     return 0;
+
 }
